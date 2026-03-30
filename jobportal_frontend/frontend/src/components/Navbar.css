@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 250px;
+    min-width: 250px;
+    background: linear-gradient(to bottom, #1c1f26, #2a2f3a);
+    padding: 20px;
+    color: white;
+}
+
+.logo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.menu-item:hover {
+    background: #3f4144;
+    border-radius: 5px;
+}
+
+.menu-item.active {
+    background: #6c757d;
+    border-radius: 5px;
+}
+
+.menu-item {
+    padding: 15px 50px;
+}
+
+
+/* Main Content */
+
+.main-content {
+    flex: 1;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 300px;
+}
+
+
+/* dashboard */
+
+.text {
+    background: linear-gradient(to right, rgb(36, 151, 246), rgb(8, 87, 171));
+    border-radius: 10px;
+}
+
+.profile {
+    border-radius: 100%;
+}
+
+.profile-section {
+    float: right;
+    position: relative;
+    top: -95px;
+}
+
+.name {
+    position: relative;
+    top: 35px;
+}
+
+.search {
+    position: absolute;
+    top: 50px;
+    width: 20%;
+    left: 750px;
+    border: none;
+    border-radius: 5px;
+}
+
+.menu div:nth-last-child(-n+2) {
+    color: #ff4d4f;
+    margin-top: 15px;
+}
+
+.last-items {
+    position: relative;
+    top: 170px;
+}
+
+
+/* Dropdown container */
+
+.submenu {
+    padding-left: 40px;
+    margin-top: 5px;
+}
+
+
+/* Dropdown items */
+
+.submenu-item {
+    padding: 8px 0;
+    font-size: 15px;
+    color: #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* Hover effect */
+
+.submenu-item:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+
+/* Active effect (optional) */
+
+.submenu-item.active {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+/* Dropdown arrow alignment */
+
+.dropdown-icon {
+    margin-left: auto;
+    font-size: 12px;
+}
+
+
+/* Smooth dropdown animation */
+
+.submenu {
+    animation: dropdownFade 0.3s ease-in-out;
+}
+
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

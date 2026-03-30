@@ -1,0 +1,108 @@
+body {
+    background: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Container */
+
+#profile-container1 {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    left: 450px;
+}
+
+
+/* Card */
+
+.profile-card {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+
+/* LEFT IMAGE */
+
+.profile-left {
+    width: 40%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-left img {
+    width: 80%;
+    border-radius: 20px;
+}
+
+.placeholder {
+    color: #999;
+}
+
+
+/* RIGHT CONTENT */
+
+.profile-right {
+    width: 60%;
+    padding: 30px;
+}
+
+
+/* Heading */
+
+.profile-right h2 {
+    margin-bottom: 15px;
+}
+
+.profile-right span {
+    color: #2575fc;
+}
+
+
+/* Details */
+
+.details p {
+    margin: 5px 0;
+}
+
+
+/* Inputs */
+
+.profile-right input,
+.profile-right textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
+/* Buttons */
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #2575fc;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #1a5edb;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}

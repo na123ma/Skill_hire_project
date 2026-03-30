@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.profile-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    min-width: 250px;
+    background: linear-gradient(to bottom, #1c1f26, #2a2f3a);
+    padding: 20px;
+    color: white;
+}
+
+
+/* Container */
+
+
+/* .profile-container {
+    background: #f4f7fb;
+    padding: 30px;
+} */
+
+
+/* Form */
+
+.profile-form {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Titles */
+
+.form-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #1a2b4c;
+}
+
+.section-title {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+
+/* Grid */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+/* Inputs */
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #dce3ed;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.input-field:focus {
+    border-color: #2a6df4;
+    outline: none;
+}
+
+
+/* Textarea */
+
+.textarea-field {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #dce3ed;
+    border-radius: 6px;
+}
+
+
+/* Cards */
+
+.card {
+    background: #f9fbff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: grid;
+    gap: 10px;
+}
+
+
+/* Buttons */
+
+.btn-primary {
+    background: #2a6df4;
+    color: white;
+    padding: 12px;
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-secondary {
+    background: #eef3ff;
+    color: #2a6df4;
+    border: 1px solid #d6e0ff;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* Upload */
+
+.upload-box {
+    border: 2px dashed #cbd5e1;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #f9fbff;
+}
+
+.upload-box:hover {
+    border-color: #2a6df4;
+}
+
+.input-file {
+    margin-bottom: 10px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Remove shadow from all inputs */
+
+input,
+textarea,
+select {
+    box-shadow: none !important;
+}
+
+
+/* Also remove focus shadow */
+
+input:focus,
+textarea:focus,
+select:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+
+
+/* Layout */
+
+.app-layout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    background: #1e293b;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.icontrash {
+    position: relative;
+    left: 620px;
+    border: none;
+}
